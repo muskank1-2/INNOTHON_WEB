@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmTech
+        
+    </title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+
+
+    <nav class="bg-white  border-gray-200 dark:bg-green-800 h-auto">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> -->
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">FarmTech</span>
+            </a>
+            <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                <button type="button"
+                    class="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                    id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown"
+                    data-dropdown-placement="bottom">
+                    <span class="sr-only">Open user menu</span>
+                    <img class="w-8 h-8 rounded-full" src="/docs/images/people/profile-picture-3.jpg" alt="user photo">
+                </button>
+                <!-- Dropdown menu -->
+                <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
+                    id="user-dropdown">
+                    <div class="px-4 py-3">
+                        <span class="block text-sm text-gray-900 dark:text-white">Bonnie Green</span>
+                        <span class="block text-sm  text-gray-500 truncate dark:text-gray-400">name@flowbite.com</span>
+                    </div>
+                    <ul class="py-2" aria-labelledby="user-menu-button">
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Settings</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Earnings</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign
+                                out</a>
+                        </li>
+                    </ul>
+                </div>
+                <button data-collapse-toggle="navbar-user" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-user" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-user">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-green-800 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-green-800 md:dark:bg-green-800 dark:border-gray-700">
+                    <li>
+                        <a href="#"
+                        class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                    </li>
+                    <li>
+                        <a href="#services"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Full-Screen Image Section -->
+<!-- Full-Screen Image Section -->
+<div class=" mt-2 overflow-hidden">
+    <img class="object-cover w-full " src="front image.jpg" alt="">
+</div>
+
+<!-- Home Section -->
+<div class="flex flex-col items-center bg-gray-100 mx-10 md:mt-10">
+    <div class="flex flex-col md:flex-row justify-center items-center box bg-white p-8 rounded-lg shadow-lg w-full max-w-6xl mt-8"> <!-- Added "mt-8" for top margin -->
+        <div class="bg-white p-5 flex justify-center items-center h-64 md:h-auto md:w-1/2">
+            <img class="h-60 w-full md:w-96 rounded-lg object-cover" src="https://imgs.search.brave.com/AHriDFjblIU3rNGrrJFW5dx-QtUbH1t4WXJw7D_3oKs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNi8w/OS8yMS8wNC80Ni9i/YXJsZXktZmllbGQt/MTY4NDA1Ml8xMjgw/LmpwZw" alt="farm image">
+        </div>
+        <div class="p-5 md:p-8 md:ml-8 md:w-1/2 text-center md:text-right">
+            <h2 class="text-xl font-bold mb-4">Welcome to FarmTech</h2>
+            <p class="text-gray-700">
+                Discover innovative solutions for modern agriculture. Our platform provides advanced tools and services to help you grow and succeed.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Video Section -->
+<div class="video mt-12 w-auto">
+    <div class="flex flex-col md:flex-row p-6 bg-white shadow-md border rounded-lg border-gray-200">
+        <div class="md:w-1/2 p-6 flex items-center">
+            <div>
+                <h2 class="text-2xl font-bold mb-4">We Help You Get The Most Out of Farming</h2>
+                <p class="text-gray-700">Here is how we predict the best crop to grow to earn the maximum profit according to the ever-changing weather.</p>
+            </div>
+        </div>
+        <div class="md:w-1/2 p-6 flex items-center justify-center">
+            <video class="w-full h-auto max-w-md" controls>
+                <source src="video.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</div>
+
+
+        <!-- Why Choose Us Section -->
+        <!-- Why Choose Us Section -->
+        <div class="mt-12 text-center px-4">
+            <h1 class="text-2xl md:text-4xl font-bold mb-4 uppercase tracking-wide leading-tight">
+                We provide <br> a comprehensive suite of <br> services tailored to the agricultural sector!
+            </h1>
+            <hr class="border-t-4 border-gray-700 w-20 md:w-24 mx-auto mb-12">
+        </div>
+
+
+        <!-- Services Section -->
+        <div id="services" class="grid grid-cols-1 md:grid-cols-2 gap-6 p-6 ">
+            <!-- Pest Identification -->
+            <div
+                class="group bg-[#a9d6c6] rounded-xl p-6 shadow-lg transform hover:-translate-y-6 transition duration-300 ease-in-out">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div>
+                        <h3
+                            class="text-2xl font-semibold text-[#2d2d2d] group-hover:text-blue-600 transition duration-300">
+                            Pest Identification.</h3>
+                        <p class="mt-2 text-[#2d2d2d]">Spot Pests, Save Crops.</p>
+                    </div>
+                    <img srcset="https://framerusercontent.com/images/BQd4sH1AEh6N9RWCmeBnvvvidSA.png?scale-down-to=512 512w,https://framerusercontent.com/images/BQd4sH1AEh6N9RWCmeBnvvvidSA.png 1024w"
+                        alt="Pest Identification" class=" md:w-60 md:h-56 h-40 md:m-3 md:p-3 p-3 object-cover">
+                </div>
+                <div class=" flex justify-start">
+                    <a href="pest.html" class="text-[#2d2d2d]  hover:text-blue-600 transition duration-300">  Explore
+                        <span
+                            class="w-10 h-10 bg-green-500 border-2 border-green-500 rounded-full flex items-center justify-center ">
+                            <img src="https://img.icons8.com/?size=100&id=11686&format=png&color=000000"
+                                alt="Pest Identification" class="w-6 h-6 invert fas fa-arrow-right">
+                        </span>
+
+                    </a>
+                </div>
+            </div>
+
+            <!-- Weather Updates -->
+            <div
+                class="group bg-[#b0d5ff] rounded-xl p-6 shadow-lg transform hover:-translate-y-6 transition duration-300 ease-in-out">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div>
+                        <h3
+                            class="text-2xl font-semibold text-[#2d2d2d] group-hover:text-blue-600 transition duration-300">
+                            Weather Updates.</h3>
+                        <p class="mt-2 text-[#2d2d2d]">Real-Time Weather, Smarter Farming.</p>
+                    </div>
+                    <img srcset="https://framerusercontent.com/images/FpmiVYWk0Zw7YVqB4TVdVJMym0.png?scale-down-to=512 512w,https://framerusercontent.com/images/FpmiVYWk0Zw7YVqB4TVdVJMym0.png 1024w"
+                        alt="Weather Updates" class="md:w-60 md:h-56 h-40 md:m-3 md:p-3 p-3 object-cover">
+                </div>
+                <div class=" flex justify-start">
+                    <a href="weather.html" class="text-[#1b0202]  hover:text-blue-600 transition duration-300">Explore
+                         <span
+                            class="w-10 h-10 bg-green-500 border-2 border-green-500 rounded-full flex items-center justify-center">
+                            <img src="https://img.icons8.com/?size=100&id=11686&format=png&color=000000"
+                                alt="Weather Updates" class="w-6 h-6 invert fas fa-arrow-right">
+                        </span>
+
+                    </a>
+                </div>
+            </div>
+
+            <!-- Crop Advice & Recommendations-->
+            <div
+                class="group bg-[#ffedb0] rounded-xl p-6 shadow-lg transform hover:-translate-y-6 transition duration-300 ease-in-out">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div>
+                        <h3
+                            class="text-2xl font-semibold text-[#2d2d2d] group-hover:text-blue-600 transition duration-300">
+                            Crop Advice & Recommendations.</h3>
+                        <p class="mt-2 text-[#2d2d2d]">Tailored Crop Solutions For Maximum Yield.</p>
+                    </div>
+                    <img src="https://framerusercontent.com/images/9KD0cX0bwiqRzQ53xoMp1dqtd1o.png" alt="Crop Advice"
+                        class="md:w-60 md:h-56 h-40 md:m-3 md:p-3 p-3 object-cover">
+                </div>
+                <div class=" flex justify-start">
+                    <a href="croprecom.html" class="text-[#2d2d2d] transition duration-300">
+
+                        <span
+                            class="w-10 h-10 bg-green-500 border-2 border-green-500 rounded-full flex items-center justify-center ">
+                            <img src="https://img.icons8.com/?size=100&id=11686&format=png&color=000000"
+                                alt="Crop Advice & Recommendations" class="w-6 h-6 invert fas fa-arrow-right">
+                        </span>
+
+                    </a>
+                </div>
+            </div>
+
+            <!-- Market Analysis -->
+            <div
+                class="ab group-600 hover:text-gray-300 text  bg-[#ffc0cb] rounded-xl p-6 shadow-lg transform hover:-translate-y-6 transition duration-300 ease-in-out">
+                <div class="flex flex-col md:flex-row items-center justify-between">
+                    <div>
+                        <h3
+                            class="text-2xl font-semibold text-[#2d2d2d] group-hover:text-blue-600 transition duration-300">
+                            Market Analysis.</h3>
+                        <p class="mt-2 text-[#2d2d2d]">Market Insights To Maximize Your Profits.</p>
+                    </div>
+                    <img class=" bmd:w-60 md:h-56 h-40 md:m-3 md:p-3 p-3 object-cover"
+                        srcset="https://framerusercontent.com/images/mbYXB1U50IMmhRkyncg0sGJyl6M.png?scale-down-to=512 512w,https://framerusercontent.com/images/mbYXB1U50IMmhRkyncg0sGJyl6M.png 954w"" alt="
+                        Market Analysis">
+                </div>
+                <div class="flex justify-start relative">
+                    <a href="your-market-api-link" class="text-[#2d2d2d] transition duration-300">
+                        <span
+                            class="w-10 h-10 bg-green-500 border-2 border-green-500 rounded-full flex items-center justify-center group-hover:border-blue-600">
+                            <img src="https://img.icons8.com/?size=100&id=11686&format=png&color=000000"
+                                alt="Market Analysis" class="w-6 h-6 invert">
+                        </span>
+                    </a>
+                </div>
+                </a>
+            </div>
+        
+
+      <!-- Know more about crops -->
+      <div
+      class="ab group-600 hover:text-gray-300 text bg-orange-500 rounded-xl p-6 shadow-lg transform hover:-translate-y-6 transition duration-300 ease-in-out">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+          <div>
+              <h3
+                  class="text-2xl font-semibold text-[#2d2d2d] group-hover:text-blue-600 transition duration-300">
+                  Explore any Crop</h3>
+              <p class="mt-2 text-[#2d2d2d]">Know more about any crop at one place.</p>
+          </div>
+          <img class=" bmd:w-60 md:h-56 h-40 md:m-3 md:p-3 p-3 object-cover"
+              srcset="https://ideogram.ai/assets/progressive-image/balanced/response/ocKidPT-SDOdQfvVbuBbKg,https://ideogram.ai/assets/progressive-image/balanced/response/2DbNe7itQDq4KA9sx04sYQ" alt="
+              Market Analysis">
+      </div>
+      <div class="flex justify-start relative">
+          <a href="Explore.html" class="text-[#2d2d2d] transition duration-300"> Explore
+              <span
+                  class="w-10 h-10 bg-green-500 border-2 border-green-500 rounded-full flex items-center justify-center group-hover:border-blue-600">
+                  <img src="https://img.icons8.com/?size=100&id=11686&format=png&color=000000"
+                      alt="Market Analysis" class="w-6 h-6 invert">
+              </span>
+          </a>
+      </div>
+      </a>
+  </div>
+
+  <!-- govt scheme -->
+  <div
+  class="ab group-600 hover:text-gray-300 text bg-orange-500 rounded-xl p-6 shadow-lg transform hover:-translate-y-6 transition duration-300 ease-in-out">
+  <div class="flex flex-col md:flex-row items-center justify-between">
+      <div>
+          <h3
+              class="text-2xl font-semibold text-[#2d2d2d] group-hover:text-blue-600 transition duration-300">
+               Government Schemes For You</h3>
+          <p class="mt-2 text-[#2d2d2d]">Know about the government schemes as per your state.</p>
+      </div>
+      <img class=" bmd:w-60 md:h-56 h-40 md:m-3 md:p-3 p-3 object-cover"
+          srcset="https://ideogram.ai/assets/image/lossless/response/Vhh1VhuFSLaWEaN6UuGNgA,https://ideogram.ai/assets/image/lossless/response/Vhh1VhuFSLaWEaN6UuGNgA" alt="
+          Market Analysis">
+  </div>
+  <div class="flex justify-start relative">
+      <a href="gov.html" class="text-[#2d2d2d] transition duration-300"> Explore
+          <span
+              class="w-10 h-10 bg-green-500 border-2 border-green-500 rounded-full flex items-center justify-center group-hover:border-blue-600">
+              <img src="https://img.icons8.com/?size=100&id=11686&format=png&color=000000"
+                  alt="Market Analysis" class="w-6 h-6 invert">
+          </span>
+      </a>
+  </div>
+  </a>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+  
+    
+    <!-- FAQ Section -->
+    <div
+        class=" min-h-screen bg-gray-100 text-gray-700 font-sans h-auto items-center justify-center flex flex-col p-6 shadow-md border rounded-lg border-gray-200">
+        <div class="w-full max-w-4xl p-6 bg-white shadow-md border rounded-lg border-gray-200 mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold mb-10">Frequently Asked Questions</h2>
+            <div class="accordion">
+                <!-- FAQ 1 -->
+                <div class="accordion-item border-b border-gray-200">
+                    <button id="accordion-button-1" aria-expanded="false"
+                        class="relative block text-left w-full py-4 text-base md:text-lg text-gray-500 font-medium hover:text-blue-500 focus:outline-none">
+                        <span class="accordion-title pr-6 text-xl md:text-3xl">Why is the moon sometimes out during the
+                            day?</span>
+                        <span
+                            class="icon absolute top-4 right-0 w-6 h-6 border border-gray-500 rounded-full flex justify-center items-center hover:border-blue-500">
+                            <span class="block w-2/3 h-px bg-current"></span>
+                            <span class="block h-2/3 w-px bg-current absolute"></span>
+                        </span>
+                    </button>
+                    <div
+                        class="accordion-content opacity-0 max-h-0 overflow-hidden transition-opacity duration-200 ease-linear">
+                        <p class="text-base md:text-2xl font-light mt-8 mb-8">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis
+                            vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                </div>
+                <!-- FAQ 2 -->
+                <div class="accordion-item border-b border-gray-200">
+                    <button id="accordion-button-2" aria-expanded="false"
+                        class="relative block text-left w-full py-4 text-base md:text-lg text-gray-500 font-medium hover:text-blue-500 focus:outline-none">
+                        <span class="accordion-title pr-6 text-xl md:text-3xl">Why is the sky blue?</span>
+                        <span
+                            class="icon absolute top-4 right-0 w-6 h-6 border border-gray-500 rounded-full flex justify-center items-center hover:border-blue-500">
+                            <span class="block w-2/3 h-px bg-current"></span>
+                            <span class="block h-2/3 w-px bg-current absolute"></span>
+                        </span>
+                    </button>
+                    <div
+                        class="accordion-content opacity-0 max-h-0 overflow-hidden transition-opacity duration-200 ease-linear">
+                        <p class="text-base md:text-2xl font-light mt-8 mb-8">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis
+                            vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                </div>
+                <!-- FAQ 3 -->
+                <div class="accordion-item border-b border-gray-200">
+                    <button id="accordion-button-3" aria-expanded="false"
+                        class="relative block text-left w-full py-4 text-base md:text-lg text-gray-500 font-medium hover:text-blue-500 focus:outline-none">
+                        <span class="accordion-title pr-6 text-xl md:text-3xl">Will we ever discover aliens?</span>
+                        <span
+                            class="icon absolute top-4 right-0 w-6 h-6 border border-gray-500 rounded-full flex justify-center items-center hover:border-blue-500">
+                            <span class="block w-2/3 h-px bg-current"></span>
+                            <span class="block h-2/3 w-px bg-current absolute"></span>
+                        </span>
+                    </button>
+                    <div
+                        class="accordion-content opacity-0 max-h-0 overflow-hidden transition-opacity duration-200 ease-linear">
+                        <p class="text-base md:text-2xl font-light mt-8 mb-8">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis
+                            vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                </div>
+                <!-- FAQ 4 -->
+                <div class="accordion-item border-b border-gray-200">
+                    <button id="accordion-button-4" aria-expanded="false"
+                        class="relative block text-left w-full py-4 text-base md:text-lg text-gray-500 font-medium hover:text-blue-500 focus:outline-none">
+                        <span class="accordion-title pr-6 text-xl md:text-3xl">How much does the Earth weigh?</span>
+                        <span
+                            class="icon absolute top-4 right-0 w-6 h-6 border border-gray-500 rounded-full flex justify-center items-center hover:border-blue-500">
+                            <span class="block w-2/3 h-px bg-current"></span>
+                            <span class="block h-2/3 w-px bg-current absolute"></span>
+                        </span>
+                    </button>
+                    <div
+                        class="accordion-content opacity-0 max-h-0 overflow-hidden transition-opacity duration-200 ease-linear">
+                        <p class="text-base md:text-2xl font-light mt-8 mb-8">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis
+                            vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                </div>
+                <!-- FAQ 5 -->
+                <div class="accordion-item border-b border-gray-200">
+                    <button id="accordion-button-5" aria-expanded="false"
+                        class="relative block text-left w-full py-4 text-base md:text-lg text-gray-500 font-medium hover:text-blue-500 focus:outline-none">
+                        <span class="accordion-title pr-6 text-xl md:text-3xl">How do airplanes stay up?</span>
+                        <span
+                            class="icon absolute top-4 right-0 w-6 h-6 border border-gray-500 rounded-full flex justify-center items-center hover:border-blue-500">
+                            <span class="block w-2/3 h-px bg-current"></span>
+                            <span class="block h-2/3 w-px bg-current absolute"></span>
+                        </span>
+                    </button>
+                    <div
+                        class="accordion-content opacity-0 max-h-0 overflow-hidden transition-opacity duration-200 ease-linear">
+                        <p class="text-base md:text-2xl font-light mt-8 mb-8">Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis
+                            vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-green-800 text-white py-12">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+            <!-- Contact Us Section -->
+            <div class="flex flex-col items-center md:items-start">
+                <h3 class="text-3xl font-bold mb-4">Contact Us</h3>
+                <p class="text-sm mb-2">+1 (234) 567-890</p>
+                <p class="text-sm mb-2">info@farmtech.com</p>
+                <p class="text-sm">123 FarmTech St, City, Country</p>
+            </div>
+    
+            <!-- Follow Us Section -->
+            <div class="flex flex-col items-center">
+                <h3 class="text-3xl font-bold mb-4">Follow Us</h3>
+                <div class="flex space-x-6 mb-4">
+                    <a href="#" class="text-white hover:text-gray-300">
+                        <img class="w-8 h-8" src="https://img.icons8.com/?size=100&id=32323&format=png&color=000000" alt="Facebook">
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-300">
+                        <img class="w-8 h-8" src="https://img.icons8.com/?size=100&id=13963&format=png&color=000000" alt="Twitter">
+                    </a>
+                    <a href="#" class="text-white hover:text-gray-300">
+                        <img class="w-8 h-8" src="https://img.icons8.com/?size=100&id=118497&format=png&color=000000" alt="Instagram">
+                    </a>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-gray-300 text-xl"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-gray-300 text-xl"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+    
+            <!-- Footer Links Section -->
+            <div class="text-center">
+                <p class="text-sm mb-4">&copy; 2024 FarmTech. All rights reserved.</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="text-white hover:text-gray-300 text-sm">Privacy Policy</a>
+                    <a href="#" class="text-white hover:text-gray-300 text-sm">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

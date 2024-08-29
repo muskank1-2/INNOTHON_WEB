@@ -1,0 +1,8 @@
+.accordion-content {
+    transition: max-height 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+button[aria-expanded="true"] + .accordion-content {
+    max-height: 1000px; /* Adjust as needed */
+    opacity: 1;
+}
